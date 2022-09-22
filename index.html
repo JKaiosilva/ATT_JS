@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div id="site">
+        <div class="container p-5 my-6 border">
+
+                <div id="fundo_centro">
+                    <h1></h1>
+                    <p id="titulo_principal">Automatizador de Sites</p>
+                    <p id="titulo_secundario">Rádio Marinha Pantanal 105.9 FM</p>
+                        <div id="relogio">
+                            <script src="main.js"></script>
+                        </div>    
+                </div>
+                <div id="sinalizador">NO AR</div>
+                <div id="no_ar">
+                    
+                        <div id="resultado_atual"><script src="main.js"></script></div>
+                    
+                </div>
+                <br>
+                <div id="tabela_atualizacao">
+                <table class="table table-hover">
+                    <thead class="table-dark">
+                        <tr class="linhas_tabela">
+                            <th>Site</th>
+                            <th>Proxima ação</th>
+                            <th>Horário</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="linhas_tabela">
+                            <td id="nome_site1"></td>
+                            <td id="primeiro_painel_acoes"></td>
+                            <td id="primeiro_painel_horario"></td>
+                        </tr>
+                        <tr class="linhas_tabela">
+                            <td id="nome_site2"></td>
+                            <td id="segundo_painel_acoes"></td>
+                            <td id="segundo_painel_horario"></td>
+                        </tr>
+                    </tbody>
+                </div>
+                </table>            
+           
+            <footer>
+
+            </footer>
+        </div>
+        <div id="inserir_dados">
+            <h1 class="titulo_bloco_dados">Insira os dados aqui</h1>
+            <div class="bloco_dados">
+                    <p class="titulo_inserir_dados">Primeiro Site:</p>
+                    <label>Nome Site:</label><input type="text" id="entrada_nome1" name="entrada_nome1" value="">
+                    <label>Link:</label><input type="text" id="entrada_valor1" name="entrada_valor1" value="">
+                    <p></p>
+                    <h3 class="titulo_inserir_dados">Horários</h3>
+                <div class="alinhamento_nome_hora">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <td>Abertura 1:</td>
+                            <td>Fechamento 1:</td>
+                            <td>Abertura 2:</td>
+                            <td>Fechamento 2:</td>
+                        </tr>
+                    </thead>
+                    </table>
+                    
+                </div>
+                <div class="alinhamento_horas">
+                    <table class="table table-hover">
+                        <tbody>
+                            <tr>   
+                                <td><input type="text" placeholder="HH,MM,SS" id="entrada_abrir1_site1" class="entrada_hora"></td>
+                                <td><input type="text" placeholder="HH,MM,SS" id="entrada_fechar1_site1" class="entrada_hora"></td>
+                                <td><input type="text" placeholder="HH,MM,SS" id="entrada_abrir2_site1" class="entrada_hora"></td>
+                                <td><input type="text" placeholder="HH,MM,SS" id="entrada_fechar2_site1" class="entrada_hora"></td>
+                            </tr> 
+                        </tbody>
+                    </table>
+                </div>
+                <br>
+            </div>
+            <div class="bloco_dados"> 
+                <p class="titulo_inserir_dados">Segundo Site:</p>
+                <label>Nome Site:</label><input	type="text" id="entrada_nome2" name="entrada_nome2" value="">
+                <label>Link:</label><input type="text" id="entrada_valor2" name="entrada_valor2" value="">
+                <p></p>
+                    <h3 class="titulo_inserir_dados">Horários</h3>
+                <div class="alinhamento_nome_hora">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <td>Abertura 1:</td>
+                            <td>Fechamento 1:</td>
+                            <td>Abertura 2:</td>
+                            <td>Fechamento 2:</td>
+                        </tr>
+                    </thead>
+                    </table>
+                    
+                </div>
+                <div class="alinhamento_horas">
+                    <table class="table table-hover">
+                        <tbody>
+                            <tr>   
+                                <td><input type="text" placeholder="HH,MM,SS" id="entrada_abrir1_site2" class="entrada_hora"></td>
+                                <td><input type="text" placeholder="HH,MM,SS" id="entrada_fechar1_site2" class="entrada_hora"></td>
+                                <td><input type="text" placeholder="HH,MM,SS" id="entrada_abrir2_site2" class="entrada_hora"></td>
+                                <td><input type="text" placeholder="HH,MM,SS" id="entrada_fechar2_site2" class="entrada_hora"></td>
+                            </tr> 
+                        </tbody>
+                    </table>
+                </div>
+                <br>
+            </div>
+            </div>
+            <script src="main.js"></script>
+            <button onclick="enviar()">Confirmar</button>
+        </div>
+    </div>
+</body>
+</html>
