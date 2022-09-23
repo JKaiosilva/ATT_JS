@@ -1,44 +1,57 @@
 .container {
-    background-color: rgb(51, 145, 207);
+    
     text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
+   
 }
 
 
+
 #titulo_principal {
-    font-family: 'Times New Roman', Times, serif;
+    
     font-size: 3rem;
 
 }
 
 #titulo_secundario {
-    font-family: 'Times New Roman', Times, serif;
+    
     font-size: 1.5rem;
 
 }
 
+.caixa_hora {
+    border-style: solid;
+    border-radius: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 10%;
+    
+}
+
 #relogio {
-    font-family: 'Courier New', Courier, monospace;
+    
     font-size: 2rem;
     border-radius: 10px;
     background-color: azure;
-    margin: 100px;
-    box-shadow:  16px 16px 22px #2871a1,
-                 -16px -16px 22px #3eb1fd;
+    width: 61%;
+    margin-left: 20%;
+    margin-right: 10%;
+
+}
+body{
+    background: linear-gradient(145deg, #77c7fd, #2591d8);
+    background-position: 100%;
+   
 }
 
-
 #site {
-    background-image: linear-gradient(45deg, rgb(231, 231, 240), rgb(200, 209, 212));
-    height: 100vh;
+    font-family:Arial, Helvetica, sans-serif;
+
 
 }
 
 #tabela_atualizacao {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 10%;
+    margin-right: 10%;
     border-radius: 10px;
     background: linear-gradient(145deg, #379bdd, #2e83ba);
     box-shadow:  16px 16px 22px #2871a1,
@@ -52,6 +65,9 @@
 }
 
 #no_ar {
+    
+    margin-left: 10%;
+    margin-right: 10%;
     border-radius: 10px;
     background: linear-gradient(145deg, #379bdd, #2e83ba);
     box-shadow:  16px 16px 22px #2871a1,
@@ -61,6 +77,7 @@
 
 #sinalizador {
     text-shadow: 2px 2px 5px red;
+    margin-left: 10%;
     
     border-radius: 10px;
     background-color: rgba(255, 19, 19, 0.137);
@@ -87,14 +104,14 @@
 
 #resultado_atual {
     text-align: center;
-    font-size: 2rem;
-
+    font-size: 1.5rem;
+   
 
 }
 
 #inserir_dados {
-    width: 100%;
-    margin: 5%;
+    
+    
 
 }
 
@@ -103,27 +120,32 @@
 .titulo_inserir_dados {
     text-align: center;
     font-size: 1.2rem;
-    color: white;
-
-}
-
-.bloco_dados {
-    text-align: left;
-    border-style:ridge;
-    border-bottom: black;
-    border-radius: 10px;
-    background: linear-gradient(145deg, #379bdd, #2e83ba);
    
 
 }
 
+.bloco_dados {
+    text-align: center;
+    border-style:ridge;
+    border-bottom: black;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #379bdd, #2e83ba);
+
+
+}
+
 .entrada_hora {
+
     width: 61%;
+    border-radius: 5px;
+    border: transparent;
     
 }
 
 .alinhamento_horas {
-    text-align: center;
+    
+    margin-top: -5%;
+    margin-bottom: -5%;
 }
 
 .table {
@@ -131,6 +153,32 @@
 }
 
 .titulo_bloco_dados {
-    color: white
+   
+    
 
+}
+.entrada_nome_link{
+    border-radius: 5px;
+    border: transparent;
+}
+
+.denominador_input_site {
+   margin-right: 5px;
+   margin-left: 30px;
+}
+.botao_enviar {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    border-radius: 7px;
+    background: linear-gradient(145deg, #3ba6ec, #328cc7);
+    box-shadow:  8px 8px 15px #23628b,
+             
+}
+
+.botao_enviar:hover {
+    background: linear-gradient(145deg, #69c6ff, #58a7db);
+    color: rgb(255, 255, 255);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
